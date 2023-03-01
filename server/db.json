@@ -12,16 +12,14 @@
             { "id": 2, "text": "TypeScript" },
             { "id": 3, "text": "CoffeeScript" }
           ],
-          "required": true,
-          "hasOther": false
+          "required": true         
         },
         {
           "id": 2,
           "type": "open-text",
           "text": "What do you like to program?",
           "placeholder": "Your answer",
-          "required": true,
-          "hasOther": false
+          "required": true
         },
         {
           "id": 3,
@@ -33,10 +31,10 @@
             { "id": 3, "text": "Hard" },
             { "id": 4, "text": "Other"}
           ],
-          "required": true,
-          "hasOther": true
+          "required": true         
         }
       ]
     }
+    
   ]
 }
