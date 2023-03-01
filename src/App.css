@@ -1,38 +1,123 @@
 .App {
-  text-align: center;
+  background-color: #feeaf8;
+  height: 100vh;
+  padding: 1rem 2rem;
+  color: #424346;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ 
+h1, h2, p{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.questions p{
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #fff;
+    border: 1px #DCDFE2 solid;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-top: 1rem solid #0FBCD4;
+}
+
+.header p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header-required{
+  color: red;
+  font-weight: 600;
+}
+
+.questions {
+  background-color: #fff;
+  border: 1px #DCDFE2 solid;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+}
+
+.multiple-choice li{
+margin-bottom: 1rem;
+}
+
+.multiple-choice input {
+  margin-right: 1rem;
+}
+
+.open-text input{
+  border: none;
+  border-bottom: 1.5px #DCDFE2 solid;
+  width: 100%;
+  padding-bottom: 0.2rem;
+  outline: none;
+}
+
+.open-text input::placeholder{
+  color:#8b939a;
+  font-size: 0.9rem;
+}
+
+.multiple-choice-other li{
+    margin-bottom: 1rem;
+    display: flex;
+    white-space: nowrap;
+}
+
+.multiple-choice-other input {
+  margin-right: 1rem;
+}
+
+
+.other-input {
+    border: none;
+    border-bottom: 1.5px #DCDFE2 solid;
+    outline: none;
+    margin-left: 1rem;
+    width: 100%;
+   
+}
+
+.form-main{
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-btn{
+  background-color: #0FBCD4;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .5s ease;
+  margin-left: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-btn:active{
+
+}
+
+.submit-btn:hover{
+  background-color: #12d8f3;
+}
+
+.required{
+  display: flex;
+  gap: 10px;
 }
